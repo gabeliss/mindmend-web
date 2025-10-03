@@ -37,7 +37,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-8 pt-8 border-t border-gray-200 flex flex-col sm:flex-row justify-between items-center space-y-2 sm:space-y-0">
-          <p className="text-gray-500 text-sm">&copy; 2024 MindMend. All rights reserved.</p>
+          <p className="text-gray-500 text-sm">&copy; 2025 MindMend. All rights reserved.</p>
           <p className="flex items-center text-gray-500 text-sm">
             Made with <Heart className="h-4 w-4 text-red-500 mx-1" /> for your mental wellness
           </p>

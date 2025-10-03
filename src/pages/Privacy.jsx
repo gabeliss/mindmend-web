@@ -4,7 +4,7 @@ const Privacy = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="prose prose-lg max-w-none">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Privacy Policy</h1>
-          <p className="text-gray-600 mb-8">Last updated: September 28, 2024</p>
+          <p className="text-gray-600 mb-8">Last updated: September 28, 2025</p>
 
           <section className="mb-8">
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Introduction</h2>
@@ -87,7 +87,7 @@ const Privacy = () => {
               <li><strong>Withdrawal:</strong> Withdraw consent for data processing</li>
             </ul>
             <p className="text-gray-600 mb-4">
-              To exercise these rights, please contact us at privacy@mindmend.app. We will respond to
+              To exercise these rights, please contact us at contact@mindmend.app. We will respond to
               your request within 30 days.
             </p>
           </section>
@@ -105,9 +105,8 @@ const Privacy = () => {
           <section className="mb-8">
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Children's Privacy</h2>
             <p className="text-gray-600 mb-4">
-              MindMend is designed for users aged 16 and above. We do not knowingly collect personal
-              information from children under 16. If you are a parent or guardian and believe your
-              child has provided us with personal information, please contact us immediately.
+              MindMend is suitable for all ages. If you are a parent or guardian and have questions
+              about your child's use of the app or their personal information, please contact us.
             </p>
           </section>
 

@@ -4,7 +4,7 @@ const Terms = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="prose prose-lg max-w-none">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Terms of Service</h1>
-          <p className="text-gray-600 mb-8">Last updated: September 28, 2024</p>
+          <p className="text-gray-600 mb-8">Last updated: September 28, 2025</p>
 
           <section className="mb-8">
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Agreement to Terms</h2>
@@ -33,9 +33,9 @@ const Terms = () => {
           <section className="mb-8">
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Eligibility</h2>
             <p className="text-gray-600 mb-4">
-              You must be at least 16 years old to use MindMend. If you are under 18, you must
-              have permission from a parent or guardian to use our Service. By using the Service,
-              you represent that you meet these age requirements.
+              MindMend is suitable for all ages. If you are under 18, you must have permission
+              from a parent or guardian to use our Service. By using the Service, you represent
+              that you meet these requirements.
             </p>
           </section>
 
