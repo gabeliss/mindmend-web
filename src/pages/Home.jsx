@@ -16,55 +16,26 @@ const Home = () => {
                 MindMend combines habit tracking, journaling, and AI-powered insights to help you build better routines and understand your patterns. Your personal growth journey starts here.
               </p>
               <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                <a href="#download" className="inline-flex items-center justify-center px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors shadow-lg">
-                  <Download className="w-5 h-5 mr-2" />
-                  Download for iOS
+                <a href="#download" className="inline-flex items-center justify-center px-6 py-3 bg-black text-white rounded-xl hover:bg-gray-900 transition-colors border-2 border-gray-800">
+                  <svg className="w-8 h-8 mr-3" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+                  </svg>
+                  <div className="flex flex-col items-start">
+                    <span className="text-xs leading-none">Download on the</span>
+                    <span className="text-xl font-semibold leading-tight">App Store</span>
+                  </div>
                 </a>
                 <a href="#features" className="inline-flex items-center justify-center px-8 py-3 border-2 border-blue-600 text-blue-600 font-semibold rounded-lg hover:bg-blue-600 hover:text-white transition-colors">
                   Learn More
                 </a>
               </div>
-              <div className="grid grid-cols-3 gap-4 pt-8">
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-gray-900">16-30</div>
-                  <div className="text-sm text-gray-600">Target Age</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-gray-900">AI-Powered</div>
-                  <div className="text-sm text-gray-600">Insights</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-gray-900">Voice</div>
-                  <div className="text-sm text-gray-600">Enabled</div>
-                </div>
-              </div>
             </div>
-            <div className="relative">
-              <div className="relative mx-auto w-64 h-128 bg-gray-900 rounded-3xl p-2 shadow-2xl">
-                <div className="bg-white rounded-2xl h-full overflow-hidden">
-                  <div className="bg-gray-100 h-6 flex items-center justify-center">
-                    <div className="w-12 h-1 bg-gray-400 rounded-full"></div>
-                  </div>
-                  <div className="p-6 space-y-6">
-                    <div className="flex items-center space-x-3">
-                      <Brain className="w-8 h-8 text-blue-600" />
-                      <span className="text-lg font-bold text-gray-900">MindMend</span>
-                    </div>
-                    <div className="space-y-3">
-                      <div className="flex items-center space-x-3 p-3 bg-green-50 rounded-lg">
-                        <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
-                          <span className="text-white text-sm font-bold">✓</span>
-                        </div>
-                        <span className="text-gray-900 font-medium">Morning meditation</span>
-                      </div>
-                      <div className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
-                        <div className="w-6 h-6 border-2 border-gray-300 rounded-full"></div>
-                        <span className="text-gray-700">Read 30 minutes</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div className="relative flex flex-col items-center">
+              <img
+                src="/src/assets/images/screenshots/Viral-portrait.png"
+                alt="MindMend App Screenshot"
+                className="w-64 h-auto"
+              />
             </div>
           </div>
         </div>
@@ -73,121 +44,625 @@ const Home = () => {
       {/* Features Section */}
       <section id="features" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="text-center max-w-3xl mx-auto mb-20">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Everything You Need for Personal Growth</h2>
             <p className="text-xl text-gray-600">
               Four powerful tools working together to help you build lasting habits and gain deep insights into your progress.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
-              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                <Target className="w-6 h-6 text-blue-600" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Habit Tracking</h3>
-              <p className="text-gray-600 mb-4">Track unlimited habits with smart categorization, visual progress indicators, and detailed analytics. Build routines that stick.</p>
-              <ul className="space-y-2 text-sm text-gray-600">
-                <li className="flex items-center"><span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2"></span>Unlimited habits (Premium)</li>
-                <li className="flex items-center"><span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2"></span>Daily completion tracking</li>
-                <li className="flex items-center"><span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2"></span>Visual progress charts</li>
-                <li className="flex items-center"><span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2"></span>Smart categorization</li>
+          {/* Feature 1: Flexible Habit Creation */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-32">
+            <div className="space-y-6">
+              <div className="inline-block px-4 py-2 bg-blue-100 text-blue-600 rounded-full text-sm font-semibold">Flexible & Powerful</div>
+              <h3 className="text-3xl sm:text-4xl font-bold text-gray-900">Track Any Habit, Your Way</h3>
+              <p className="text-xl text-gray-600 leading-relaxed">
+                Choose from four habit types to perfectly match your goals. From simple yes/no tracking to quantity measurements, duration timers, and time-specific schedules.
+              </p>
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center mt-1 mr-3 flex-shrink-0">
+                    <span className="text-white text-sm font-bold">✓</span>
+                  </div>
+                  <div>
+                    <span className="font-semibold text-gray-900">4 Tracking Types</span>
+                    <p className="text-gray-600">Yes/No, Quantity, Duration, and Schedule-based habits</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center mt-1 mr-3 flex-shrink-0">
+                    <span className="text-white text-sm font-bold">✓</span>
+                  </div>
+                  <div>
+                    <span className="font-semibold text-gray-900">Custom Schedules</span>
+                    <p className="text-gray-600">Set daily, weekly, or specific day frequencies for each habit</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center mt-1 mr-3 flex-shrink-0">
+                    <span className="text-white text-sm font-bold">✓</span>
+                  </div>
+                  <div>
+                    <span className="font-semibold text-gray-900">Personalized Goals</span>
+                    <p className="text-gray-600">Set your own targets and timeframes for maximum flexibility</p>
+                  </div>
+                </li>
               </ul>
             </div>
+            <div className="relative">
+              <img
+                src="/src/assets/images/screenshots/AddHabit-portrait.png"
+                alt="Add Habit Screen"
+                className="w-full max-w-sm mx-auto"
+              />
+            </div>
+          </div>
 
-            <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
-              <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-                <MessageCircle className="w-6 h-6 text-green-600" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Smart Journaling</h3>
-              <p className="text-gray-600 mb-4">Record your thoughts and reflections with date-based organization. Your journal entries help AI understand your journey.</p>
-              <ul className="space-y-2 text-sm text-gray-600">
-                <li className="flex items-center"><span className="w-1.5 h-1.5 bg-green-600 rounded-full mr-2"></span>Free-form text entries</li>
-                <li className="flex items-center"><span className="w-1.5 h-1.5 bg-green-600 rounded-full mr-2"></span>Date-based organization</li>
-                <li className="flex items-center"><span className="w-1.5 h-1.5 bg-green-600 rounded-full mr-2"></span>AI integration</li>
-                <li className="flex items-center"><span className="w-1.5 h-1.5 bg-green-600 rounded-full mr-2"></span>Private & secure</li>
+          {/* Feature 2: Voice Dictation */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-32">
+            <div className="relative order-2 lg:order-1">
+              <img
+                src="/src/assets/images/screenshots/Dictation-portrait.png"
+                alt="Voice Dictation"
+                className="w-full max-w-sm mx-auto"
+              />
+            </div>
+            <div className="space-y-6 order-1 lg:order-2">
+              <div className="inline-block px-4 py-2 bg-purple-100 text-purple-600 rounded-full text-sm font-semibold">Hands-Free Tracking</div>
+              <h3 className="text-3xl sm:text-4xl font-bold text-gray-900">Just Talk, We'll Track</h3>
+              <p className="text-xl text-gray-600 leading-relaxed">
+                Simply describe your day and let AI automatically log your habits. No more tedious manual entry—tracking your progress has never been easier.
+              </p>
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <div className="w-6 h-6 bg-purple-600 rounded-full flex items-center justify-center mt-1 mr-3 flex-shrink-0">
+                    <Mic className="w-4 h-4 text-white" />
+                  </div>
+                  <div>
+                    <span className="font-semibold text-gray-900">Natural Language Processing</span>
+                    <p className="text-gray-600">Speak naturally—AI understands your habits and activities</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-6 h-6 bg-purple-600 rounded-full flex items-center justify-center mt-1 mr-3 flex-shrink-0">
+                    <Mic className="w-4 h-4 text-white" />
+                  </div>
+                  <div>
+                    <span className="font-semibold text-gray-900">Instant Logging</span>
+                    <p className="text-gray-600">Habits logged automatically in seconds</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-6 h-6 bg-purple-600 rounded-full flex items-center justify-center mt-1 mr-3 flex-shrink-0">
+                    <Mic className="w-4 h-4 text-white" />
+                  </div>
+                  <div>
+                    <span className="font-semibold text-gray-900">60-Second Updates</span>
+                    <p className="text-gray-600">Quick voice updates to track your entire day</p>
+                  </div>
+                </li>
               </ul>
             </div>
+          </div>
 
-            <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
-              <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-                <Brain className="w-6 h-6 text-purple-600" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">AI Assistant (Aya)</h3>
-              <p className="text-gray-600 mb-4">Chat with Aya, your personal AI coach who understands your habits and journal entries to provide personalized insights.</p>
-              <ul className="space-y-2 text-sm text-gray-600">
-                <li className="flex items-center"><span className="w-1.5 h-1.5 bg-purple-600 rounded-full mr-2"></span>Contextual understanding</li>
-                <li className="flex items-center"><span className="w-1.5 h-1.5 bg-purple-600 rounded-full mr-2"></span>Personalized insights</li>
-                <li className="flex items-center"><span className="w-1.5 h-1.5 bg-purple-600 rounded-full mr-2"></span>Motivational support</li>
-                <li className="flex items-center"><span className="w-1.5 h-1.5 bg-purple-600 rounded-full mr-2"></span>Conversation history</li>
+          {/* Feature 3: GitHub-Style Analytics */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-32">
+            <div className="space-y-6">
+              <div className="inline-block px-4 py-2 bg-green-100 text-green-600 rounded-full text-sm font-semibold">Beautiful Visualizations</div>
+              <h3 className="text-3xl sm:text-4xl font-bold text-gray-900">See Your Progress Like Never Before</h3>
+              <p className="text-xl text-gray-600 leading-relaxed">
+                Beautiful GitHub-style contribution charts show your consistency at a glance. Track multiple habits simultaneously with colorful heat maps that make your progress impossible to ignore.
+              </p>
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <div className="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center mt-1 mr-3 flex-shrink-0">
+                    <BarChart3 className="w-4 h-4 text-white" />
+                  </div>
+                  <div>
+                    <span className="font-semibold text-gray-900">GitHub-Style Heat Maps</span>
+                    <p className="text-gray-600">Instantly see your consistency patterns across months</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center mt-1 mr-3 flex-shrink-0">
+                    <BarChart3 className="w-4 h-4 text-white" />
+                  </div>
+                  <div>
+                    <span className="font-semibold text-gray-900">Multi-Habit View</span>
+                    <p className="text-gray-600">Compare all your habits side-by-side in one view</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center mt-1 mr-3 flex-shrink-0">
+                    <BarChart3 className="w-4 h-4 text-white" />
+                  </div>
+                  <div>
+                    <span className="font-semibold text-gray-900">Completion Counts</span>
+                    <p className="text-gray-600">Track total completions for each habit over time</p>
+                  </div>
+                </li>
               </ul>
             </div>
+            <div className="relative">
+              <img
+                src="/src/assets/images/screenshots/GithubCharts-portrait.png"
+                alt="GitHub-Style Analytics"
+                className="w-full max-w-sm mx-auto"
+              />
+            </div>
+          </div>
 
-            <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
-              <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
-                <Mic className="w-6 h-6 text-orange-600" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Voice-Powered</h3>
-              <p className="text-gray-600 mb-4">Dictate your day and let AI fill out your habits. Hands-free tracking makes building routines effortless and natural.</p>
-              <ul className="space-y-2 text-sm text-gray-600">
-                <li className="flex items-center"><span className="w-1.5 h-1.5 bg-orange-600 rounded-full mr-2"></span>Voice dictation</li>
-                <li className="flex items-center"><span className="w-1.5 h-1.5 bg-orange-600 rounded-full mr-2"></span>"Dictate your day" feature</li>
-                <li className="flex items-center"><span className="w-1.5 h-1.5 bg-orange-600 rounded-full mr-2"></span>Hands-free interaction</li>
-                <li className="flex items-center"><span className="w-1.5 h-1.5 bg-orange-600 rounded-full mr-2"></span>Natural language processing</li>
+          {/* Feature 4: AI Insights */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-32">
+            <div className="relative order-2 lg:order-1">
+              <img
+                src="/src/assets/images/screenshots/CrossHabit-portrait.png"
+                alt="Cross-Habit Insights"
+                className="w-full max-w-sm mx-auto"
+              />
+            </div>
+            <div className="space-y-6 order-1 lg:order-2">
+              <div className="inline-block px-4 py-2 bg-indigo-100 text-indigo-600 rounded-full text-sm font-semibold">AI-Powered</div>
+              <h3 className="text-3xl sm:text-4xl font-bold text-gray-900">Discover Hidden Patterns</h3>
+              <p className="text-xl text-gray-600 leading-relaxed">
+                Our AI finds correlations between your habits you never knew existed. Understand what triggers success and what holds you back with cross-habit insights.
+              </p>
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <div className="w-6 h-6 bg-indigo-600 rounded-full flex items-center justify-center mt-1 mr-3 flex-shrink-0">
+                    <Brain className="w-4 h-4 text-white" />
+                  </div>
+                  <div>
+                    <span className="font-semibold text-gray-900">Habit Correlations</span>
+                    <p className="text-gray-600">See which habits influence each other</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-6 h-6 bg-indigo-600 rounded-full flex items-center justify-center mt-1 mr-3 flex-shrink-0">
+                    <Brain className="w-4 h-4 text-white" />
+                  </div>
+                  <div>
+                    <span className="font-semibold text-gray-900">Pattern Recognition</span>
+                    <p className="text-gray-600">AI identifies success patterns and struggles</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-6 h-6 bg-indigo-600 rounded-full flex items-center justify-center mt-1 mr-3 flex-shrink-0">
+                    <Brain className="w-4 h-4 text-white" />
+                  </div>
+                  <div>
+                    <span className="font-semibold text-gray-900">Actionable Recommendations</span>
+                    <p className="text-gray-600">Get personalized tips to improve your routines</p>
+                  </div>
+                </li>
               </ul>
+            </div>
+          </div>
+
+          {/* Feature 5: Journaling */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-32">
+            <div className="space-y-6">
+              <div className="inline-block px-4 py-2 bg-pink-100 text-pink-600 rounded-full text-sm font-semibold">Reflect & Grow</div>
+              <h3 className="text-3xl sm:text-4xl font-bold text-gray-900">Journal Your Journey</h3>
+              <p className="text-xl text-gray-600 leading-relaxed">
+                Capture your thoughts, moods, and reflections. Your journal entries help Aya understand your emotional journey and provide better personalized guidance.
+              </p>
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <div className="w-6 h-6 bg-pink-600 rounded-full flex items-center justify-center mt-1 mr-3 flex-shrink-0">
+                    <MessageCircle className="w-4 h-4 text-white" />
+                  </div>
+                  <div>
+                    <span className="font-semibold text-gray-900">Free-Form Entries</span>
+                    <p className="text-gray-600">Write without constraints—capture your authentic self</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-6 h-6 bg-pink-600 rounded-full flex items-center justify-center mt-1 mr-3 flex-shrink-0">
+                    <MessageCircle className="w-4 h-4 text-white" />
+                  </div>
+                  <div>
+                    <span className="font-semibold text-gray-900">Mood Tracking</span>
+                    <p className="text-gray-600">Rate your entries to track emotional patterns</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-6 h-6 bg-pink-600 rounded-full flex items-center justify-center mt-1 mr-3 flex-shrink-0">
+                    <MessageCircle className="w-4 h-4 text-white" />
+                  </div>
+                  <div>
+                    <span className="font-semibold text-gray-900">Private & Secure</span>
+                    <p className="text-gray-600">Your thoughts stay private, always</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div className="relative">
+              <img
+                src="/src/assets/images/screenshots/Journal-portrait.png"
+                alt="Journal"
+                className="w-full max-w-sm mx-auto"
+              />
+            </div>
+          </div>
+
+          {/* Feature 6: Calendar View */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-32">
+            <div className="relative order-2 lg:order-1">
+              <img
+                src="/src/assets/images/screenshots/CalendarView-portrait.png"
+                alt="Calendar View"
+                className="w-full max-w-sm mx-auto"
+              />
+            </div>
+            <div className="space-y-6 order-1 lg:order-2">
+              <div className="inline-block px-4 py-2 bg-teal-100 text-teal-600 rounded-full text-sm font-semibold">Detailed Tracking</div>
+              <h3 className="text-3xl sm:text-4xl font-bold text-gray-900">Every Day Tells a Story</h3>
+              <p className="text-xl text-gray-600 leading-relaxed">
+                Dive deep into individual habits with detailed calendar views. See exactly when you completed each habit, track your streaks, and monitor your monthly completion rate.
+              </p>
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <div className="w-6 h-6 bg-teal-600 rounded-full flex items-center justify-center mt-1 mr-3 flex-shrink-0">
+                    <Target className="w-4 h-4 text-white" />
+                  </div>
+                  <div>
+                    <span className="font-semibold text-gray-900">Daily Detail View</span>
+                    <p className="text-gray-600">See exactly what you accomplished each day with quantity tracking</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-6 h-6 bg-teal-600 rounded-full flex items-center justify-center mt-1 mr-3 flex-shrink-0">
+                    <Target className="w-4 h-4 text-white" />
+                  </div>
+                  <div>
+                    <span className="font-semibold text-gray-900">Streak Tracking</span>
+                    <p className="text-gray-600">Monitor current and best streaks to stay motivated</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-6 h-6 bg-teal-600 rounded-full flex items-center justify-center mt-1 mr-3 flex-shrink-0">
+                    <Target className="w-4 h-4 text-white" />
+                  </div>
+                  <div>
+                    <span className="font-semibold text-gray-900">Monthly Completion %</span>
+                    <p className="text-gray-600">Track your success rate for each habit over time</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Feature 7: Performance Analytics */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-32">
+            <div className="space-y-6">
+              <div className="inline-block px-4 py-2 bg-orange-100 text-orange-600 rounded-full text-sm font-semibold">Performance Insights</div>
+              <h3 className="text-3xl sm:text-4xl font-bold text-gray-900">Understand What Works</h3>
+              <p className="text-xl text-gray-600 leading-relaxed">
+                Detailed performance analytics show your day-of-week patterns, identify performance gaps, and let you add contextual notes to understand your successes and struggles.
+              </p>
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <div className="w-6 h-6 bg-orange-600 rounded-full flex items-center justify-center mt-1 mr-3 flex-shrink-0">
+                    <BarChart3 className="w-4 h-4 text-white" />
+                  </div>
+                  <div>
+                    <span className="font-semibold text-gray-900">Day-of-Week Analysis</span>
+                    <p className="text-gray-600">See which days you're most consistent on</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-6 h-6 bg-orange-600 rounded-full flex items-center justify-center mt-1 mr-3 flex-shrink-0">
+                    <BarChart3 className="w-4 h-4 text-white" />
+                  </div>
+                  <div>
+                    <span className="font-semibold text-gray-900">Performance Gaps</span>
+                    <p className="text-gray-600">AI identifies when and where you struggle</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-6 h-6 bg-orange-600 rounded-full flex items-center justify-center mt-1 mr-3 flex-shrink-0">
+                    <BarChart3 className="w-4 h-4 text-white" />
+                  </div>
+                  <div>
+                    <span className="font-semibold text-gray-900">Contextual Notes</span>
+                    <p className="text-gray-600">Add notes to track why you succeeded or missed a day</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div className="relative">
+              <img
+                src="/src/assets/images/screenshots/NotesandPerformance-portrait.png"
+                alt="Performance Analytics"
+                className="w-full max-w-sm mx-auto"
+              />
+            </div>
+          </div>
+
+          {/* Feature 8: Overall Analytics */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-32">
+            <div className="relative order-2 lg:order-1">
+              <img
+                src="/src/assets/images/screenshots/Analytics-portrait.png"
+                alt="Overall Analytics"
+                className="w-full max-w-sm mx-auto"
+              />
+            </div>
+            <div className="space-y-6 order-1 lg:order-2">
+              <div className="inline-block px-4 py-2 bg-cyan-100 text-cyan-600 rounded-full text-sm font-semibold">Big Picture View</div>
+              <h3 className="text-3xl sm:text-4xl font-bold text-gray-900">Celebrate Your Progress</h3>
+              <p className="text-xl text-gray-600 leading-relaxed">
+                Get an overview of your entire habit ecosystem with completion rates, goal performance, and motivational insights that celebrate your wins and encourage continued growth.
+              </p>
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <div className="w-6 h-6 bg-cyan-600 rounded-full flex items-center justify-center mt-1 mr-3 flex-shrink-0">
+                    <Zap className="w-4 h-4 text-white" />
+                  </div>
+                  <div>
+                    <span className="font-semibold text-gray-900">Overall Completion Rate</span>
+                    <p className="text-gray-600">See your total success rate across all habits</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-6 h-6 bg-cyan-600 rounded-full flex items-center justify-center mt-1 mr-3 flex-shrink-0">
+                    <Zap className="w-4 h-4 text-white" />
+                  </div>
+                  <div>
+                    <span className="font-semibold text-gray-900">Goal Performance</span>
+                    <p className="text-gray-600">Track how you're doing against your targets</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-6 h-6 bg-cyan-600 rounded-full flex items-center justify-center mt-1 mr-3 flex-shrink-0">
+                    <Zap className="w-4 h-4 text-white" />
+                  </div>
+                  <div>
+                    <span className="font-semibold text-gray-900">Motivational Insights</span>
+                    <p className="text-gray-600">AI celebrates your streaks and progress milestones</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Feature 9: AI Assistant */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              <div className="inline-block px-4 py-2 bg-purple-100 text-purple-600 rounded-full text-sm font-semibold">Your AI Coach</div>
+              <h3 className="text-3xl sm:text-4xl font-bold text-gray-900">Meet Aya, Your Personal Growth Partner</h3>
+              <p className="text-xl text-gray-600 leading-relaxed">
+                Chat with Aya anytime for personalized insights, motivation, and advice. She understands your habits, journal entries, and patterns to provide truly customized guidance.
+              </p>
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <div className="w-6 h-6 bg-purple-600 rounded-full flex items-center justify-center mt-1 mr-3 flex-shrink-0">
+                    <Brain className="w-4 h-4 text-white" />
+                  </div>
+                  <div>
+                    <span className="font-semibold text-gray-900">Contextual Understanding</span>
+                    <p className="text-gray-600">Aya knows your complete MindMend history</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-6 h-6 bg-purple-600 rounded-full flex items-center justify-center mt-1 mr-3 flex-shrink-0">
+                    <Brain className="w-4 h-4 text-white" />
+                  </div>
+                  <div>
+                    <span className="font-semibold text-gray-900">24/7 Support</span>
+                    <p className="text-gray-600">Get help and motivation whenever you need it</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-6 h-6 bg-purple-600 rounded-full flex items-center justify-center mt-1 mr-3 flex-shrink-0">
+                    <Brain className="w-4 h-4 text-white" />
+                  </div>
+                  <div>
+                    <span className="font-semibold text-gray-900">Smart Suggestions</span>
+                    <p className="text-gray-600">Get prompted with relevant questions based on your data</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div className="relative">
+              <img
+                src="/src/assets/images/screenshots/Aya-portrait.png"
+                alt="Aya AI Assistant"
+                className="w-full max-w-sm mx-auto"
+              />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Premium Section */}
-      <section className="py-20 bg-gradient-to-br from-purple-50 to-blue-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-4xl mx-auto">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-yellow-100 rounded-full mb-6">
-              <Crown className="w-8 h-8 text-yellow-600" />
-            </div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">MindMend Premium</h2>
-            <p className="text-xl text-gray-600 mb-12">Unlock the full potential of your personal growth journey with advanced features and unlimited access.</p>
+      {/* Testimonials Section */}
+      <section className="py-20 bg-gradient-to-br from-blue-50 to-purple-50 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+          <div className="text-center">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Loved by Thousands</h2>
+            <p className="text-xl text-gray-600">See what our users are saying about their transformation</p>
+          </div>
+        </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-              <div className="flex items-center space-x-3 p-4 bg-white rounded-lg shadow-sm">
-                <Zap className="w-6 h-6 text-blue-600" />
-                <span className="text-gray-900 font-medium">Unlimited habit tracking</span>
+        <style>{`
+          @keyframes scroll {
+            0% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translateX(-50%);
+            }
+          }
+          .animate-scroll {
+            animation: scroll 40s linear infinite;
+          }
+          .animate-scroll:hover {
+            animation-play-state: paused;
+          }
+        `}</style>
+
+        <div className="relative">
+          <div className="flex animate-scroll">
+            {/* First set of testimonials */}
+            <div className="flex space-x-6 px-3">
+              <div className="bg-white p-6 rounded-xl shadow-lg min-w-[350px] max-w-[350px]">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold text-lg">
+                    S
+                  </div>
+                  <div className="ml-3">
+                    <p className="font-semibold text-gray-900">Sarah Chen</p>
+                    <div className="flex text-yellow-400">★★★★★</div>
+                  </div>
+                </div>
+                <p className="text-gray-600 italic">"MindMend completely changed how I approach my daily routines. The voice dictation feature is a game-changer!"</p>
               </div>
-              <div className="flex items-center space-x-3 p-4 bg-white rounded-lg shadow-sm">
-                <Brain className="w-6 h-6 text-purple-600" />
-                <span className="text-gray-900 font-medium">Full AI chat access with Aya</span>
+
+              <div className="bg-white p-6 rounded-xl shadow-lg min-w-[350px] max-w-[350px]">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 font-bold text-lg">
+                    M
+                  </div>
+                  <div className="ml-3">
+                    <p className="font-semibold text-gray-900">Marcus Johnson</p>
+                    <div className="flex text-yellow-400">★★★★★</div>
+                  </div>
+                </div>
+                <p className="text-gray-600 italic">"The AI insights are incredible. I discovered patterns in my habits I never would have noticed on my own."</p>
               </div>
-              <div className="flex items-center space-x-3 p-4 bg-white rounded-lg shadow-sm">
-                <BarChart3 className="w-6 h-6 text-green-600" />
-                <span className="text-gray-900 font-medium">Advanced analytics & metrics</span>
+
+              <div className="bg-white p-6 rounded-xl shadow-lg min-w-[350px] max-w-[350px]">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600 font-bold text-lg">
+                    E
+                  </div>
+                  <div className="ml-3">
+                    <p className="font-semibold text-gray-900">Emma Rodriguez</p>
+                    <div className="flex text-yellow-400">★★★★★</div>
+                  </div>
+                </div>
+                <p className="text-gray-600 italic">"Finally, a habit tracker that doesn't feel like a chore. The GitHub-style charts keep me motivated every day!"</p>
               </div>
-              <div className="flex items-center space-x-3 p-4 bg-white rounded-lg shadow-sm">
-                <Mic className="w-6 h-6 text-orange-600" />
-                <span className="text-gray-900 font-medium">Voice-powered tracking</span>
+
+              <div className="bg-white p-6 rounded-xl shadow-lg min-w-[350px] max-w-[350px]">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center text-orange-600 font-bold text-lg">
+                    D
+                  </div>
+                  <div className="ml-3">
+                    <p className="font-semibold text-gray-900">David Park</p>
+                    <div className="flex text-yellow-400">★★★★★</div>
+                  </div>
+                </div>
+                <p className="text-gray-600 italic">"Aya feels like having a personal coach in my pocket. Best investment I've made in my personal growth journey."</p>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl shadow-lg min-w-[350px] max-w-[350px]">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center text-pink-600 font-bold text-lg">
+                    L
+                  </div>
+                  <div className="ml-3">
+                    <p className="font-semibold text-gray-900">Lisa Thompson</p>
+                    <div className="flex text-yellow-400">★★★★★</div>
+                  </div>
+                </div>
+                <p className="text-gray-600 italic">"I've tried every habit app out there. MindMend's analytics and journaling integration is unmatched."</p>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl shadow-lg min-w-[350px] max-w-[350px]">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 font-bold text-lg">
+                    J
+                  </div>
+                  <div className="ml-3">
+                    <p className="font-semibold text-gray-900">James Wilson</p>
+                    <div className="flex text-yellow-400">★★★★★</div>
+                  </div>
+                </div>
+                <p className="text-gray-600 italic">"The cross-habit insights helped me understand why I struggle on certain days. This app is pure magic!"</p>
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
-              <div className="relative bg-white p-8 rounded-2xl shadow-lg border-2 border-blue-500">
-                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-blue-500 text-white px-4 py-1 rounded-full text-sm font-medium">Best Value</span>
+            {/* Duplicate set for seamless loop */}
+            <div className="flex space-x-6 px-3">
+              <div className="bg-white p-6 rounded-xl shadow-lg min-w-[350px] max-w-[350px]">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold text-lg">
+                    S
+                  </div>
+                  <div className="ml-3">
+                    <p className="font-semibold text-gray-900">Sarah Chen</p>
+                    <div className="flex text-yellow-400">★★★★★</div>
+                  </div>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Yearly</h3>
-                <div className="mb-4">
-                  <span className="text-4xl font-bold text-gray-900">$49.99</span>
-                  <span className="text-gray-600">/year</span>
-                </div>
-                <p className="text-gray-600">3-day free trial • 58% savings</p>
+                <p className="text-gray-600 italic">"MindMend completely changed how I approach my daily routines. The voice dictation feature is a game-changer!"</p>
               </div>
-              <div className="bg-white p-8 rounded-2xl shadow-lg">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Monthly</h3>
-                <div className="mb-4">
-                  <span className="text-4xl font-bold text-gray-900">$9.99</span>
-                  <span className="text-gray-600">/month</span>
+
+              <div className="bg-white p-6 rounded-xl shadow-lg min-w-[350px] max-w-[350px]">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 font-bold text-lg">
+                    M
+                  </div>
+                  <div className="ml-3">
+                    <p className="font-semibold text-gray-900">Marcus Johnson</p>
+                    <div className="flex text-yellow-400">★★★★★</div>
+                  </div>
                 </div>
-                <p className="text-gray-600">Cancel anytime</p>
+                <p className="text-gray-600 italic">"The AI insights are incredible. I discovered patterns in my habits I never would have noticed on my own."</p>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl shadow-lg min-w-[350px] max-w-[350px]">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600 font-bold text-lg">
+                    E
+                  </div>
+                  <div className="ml-3">
+                    <p className="font-semibold text-gray-900">Emma Rodriguez</p>
+                    <div className="flex text-yellow-400">★★★★★</div>
+                  </div>
+                </div>
+                <p className="text-gray-600 italic">"Finally, a habit tracker that doesn't feel like a chore. The GitHub-style charts keep me motivated every day!"</p>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl shadow-lg min-w-[350px] max-w-[350px]">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center text-orange-600 font-bold text-lg">
+                    D
+                  </div>
+                  <div className="ml-3">
+                    <p className="font-semibold text-gray-900">David Park</p>
+                    <div className="flex text-yellow-400">★★★★★</div>
+                  </div>
+                </div>
+                <p className="text-gray-600 italic">"Aya feels like having a personal coach in my pocket. Best investment I've made in my personal growth journey."</p>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl shadow-lg min-w-[350px] max-w-[350px]">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center text-pink-600 font-bold text-lg">
+                    L
+                  </div>
+                  <div className="ml-3">
+                    <p className="font-semibold text-gray-900">Lisa Thompson</p>
+                    <div className="flex text-yellow-400">★★★★★</div>
+                  </div>
+                </div>
+                <p className="text-gray-600 italic">"I've tried every habit app out there. MindMend's analytics and journaling integration is unmatched."</p>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl shadow-lg min-w-[350px] max-w-[350px]">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 font-bold text-lg">
+                    J
+                  </div>
+                  <div className="ml-3">
+                    <p className="font-semibold text-gray-900">James Wilson</p>
+                    <div className="flex text-yellow-400">★★★★★</div>
+                  </div>
+                </div>
+                <p className="text-gray-600 italic">"The cross-habit insights helped me understand why I struggle on certain days. This app is pure magic!"</p>
               </div>
             </div>
           </div>
