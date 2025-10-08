@@ -16,7 +16,7 @@ const Home = () => {
                 MindMend combines habit tracking, journaling, and AI-powered insights to help you build better routines and understand your patterns. Your personal growth journey starts here.
               </p>
               <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                <a href="#download" className="inline-flex items-center justify-center px-6 py-3 bg-black text-white rounded-xl hover:bg-gray-900 transition-colors border-2 border-gray-800">
+                <a href="https://apps.apple.com/us/app/mindmend-habit-tracker/id6753316303" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-6 py-3 bg-black text-white rounded-xl hover:bg-gray-900 transition-colors border-2 border-gray-800">
                   <svg className="w-8 h-8 mr-3" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
                   </svg>
@@ -32,7 +32,7 @@ const Home = () => {
             </div>
             <div className="relative flex flex-col items-center">
               <img
-                src="/src/assets/images/screenshots/Viral-portrait.png"
+                src="/images/screenshots/Viral-portrait.png"
                 alt="MindMend App Screenshot"
                 className="w-64 h-auto"
               />
@@ -54,7 +54,7 @@ const Home = () => {
           {/* Feature 1: Flexible Habit Creation */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-32">
             <div className="space-y-6">
-              <div className="inline-block px-4 py-2 bg-blue-100 text-blue-600 rounded-full text-sm font-semibold">Flexible & Powerful</div>
+              <div className="inline-block px-4 py-2 bg-blue-100 text-blue-600 rounded-full text-sm font-semibold text-center lg:text-left w-full lg:w-auto">Flexible & Powerful</div>
               <h3 className="text-3xl sm:text-4xl font-bold text-gray-900">Track Any Habit, Your Way</h3>
               <p className="text-xl text-gray-600 leading-relaxed">
                 Choose from four habit types to perfectly match your goals. From simple yes/no tracking to quantity measurements, duration timers, and time-specific schedules.
@@ -91,7 +91,7 @@ const Home = () => {
             </div>
             <div className="relative">
               <img
-                src="/src/assets/images/screenshots/AddHabit-portrait.png"
+                src="/images/screenshots/AddHabit-portrait.png"
                 alt="Add Habit Screen"
                 className="w-full max-w-sm mx-auto"
               />
@@ -102,13 +102,13 @@ const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-32">
             <div className="relative order-2 lg:order-1">
               <img
-                src="/src/assets/images/screenshots/Dictation-portrait.png"
+                src="/images/screenshots/Dictation-portrait.png"
                 alt="Voice Dictation"
                 className="w-full max-w-sm mx-auto"
               />
             </div>
             <div className="space-y-6 order-1 lg:order-2">
-              <div className="inline-block px-4 py-2 bg-purple-100 text-purple-600 rounded-full text-sm font-semibold">Hands-Free Tracking</div>
+              <div className="inline-block px-4 py-2 bg-purple-100 text-purple-600 rounded-full text-sm font-semibold text-center lg:text-left w-full lg:w-auto">Hands-Free Tracking</div>
               <h3 className="text-3xl sm:text-4xl font-bold text-gray-900">Just Talk, We'll Track</h3>
               <p className="text-xl text-gray-600 leading-relaxed">
                 Simply describe your day and let AI automatically log your habits. No more tedious manual entry—tracking your progress has never been easier.
@@ -148,7 +148,7 @@ const Home = () => {
           {/* Feature 3: GitHub-Style Analytics */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-32">
             <div className="space-y-6">
-              <div className="inline-block px-4 py-2 bg-green-100 text-green-600 rounded-full text-sm font-semibold">Beautiful Visualizations</div>
+              <div className="inline-block px-4 py-2 bg-green-100 text-green-600 rounded-full text-sm font-semibold text-center lg:text-left w-full lg:w-auto">Beautiful Visualizations</div>
               <h3 className="text-3xl sm:text-4xl font-bold text-gray-900">See Your Progress Like Never Before</h3>
               <p className="text-xl text-gray-600 leading-relaxed">
                 Beautiful GitHub-style contribution charts show your consistency at a glance. Track multiple habits simultaneously with colorful heat maps that make your progress impossible to ignore.
@@ -185,7 +185,7 @@ const Home = () => {
             </div>
             <div className="relative">
               <img
-                src="/src/assets/images/screenshots/GithubCharts-portrait.png"
+                src="/images/screenshots/GithubCharts-portrait.png"
                 alt="GitHub-Style Analytics"
                 className="w-full max-w-sm mx-auto"
               />
@@ -196,13 +196,13 @@ const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-32">
             <div className="relative order-2 lg:order-1">
               <img
-                src="/src/assets/images/screenshots/CrossHabit-portrait.png"
+                src="/images/screenshots/CrossHabit-portrait.png"
                 alt="Cross-Habit Insights"
                 className="w-full max-w-sm mx-auto"
               />
             </div>
             <div className="space-y-6 order-1 lg:order-2">
-              <div className="inline-block px-4 py-2 bg-indigo-100 text-indigo-600 rounded-full text-sm font-semibold">AI-Powered</div>
+              <div className="inline-block px-4 py-2 bg-indigo-100 text-indigo-600 rounded-full text-sm font-semibold text-center lg:text-left w-full lg:w-auto">AI-Powered</div>
               <h3 className="text-3xl sm:text-4xl font-bold text-gray-900">Discover Hidden Patterns</h3>
               <p className="text-xl text-gray-600 leading-relaxed">
                 Our AI finds correlations between your habits you never knew existed. Understand what triggers success and what holds you back with cross-habit insights.
@@ -242,7 +242,7 @@ const Home = () => {
           {/* Feature 5: Journaling */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-32">
             <div className="space-y-6">
-              <div className="inline-block px-4 py-2 bg-pink-100 text-pink-600 rounded-full text-sm font-semibold">Reflect & Grow</div>
+              <div className="inline-block px-4 py-2 bg-pink-100 text-pink-600 rounded-full text-sm font-semibold text-center lg:text-left w-full lg:w-auto">Reflect & Grow</div>
               <h3 className="text-3xl sm:text-4xl font-bold text-gray-900">Journal Your Journey</h3>
               <p className="text-xl text-gray-600 leading-relaxed">
                 Capture your thoughts, moods, and reflections. Your journal entries help Aya understand your emotional journey and provide better personalized guidance.
@@ -279,7 +279,7 @@ const Home = () => {
             </div>
             <div className="relative">
               <img
-                src="/src/assets/images/screenshots/Journal-portrait.png"
+                src="/images/screenshots/Journal-portrait.png"
                 alt="Journal"
                 className="w-full max-w-sm mx-auto"
               />
@@ -290,13 +290,13 @@ const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-32">
             <div className="relative order-2 lg:order-1">
               <img
-                src="/src/assets/images/screenshots/CalendarView-portrait.png"
+                src="/images/screenshots/CalendarView-portrait.png"
                 alt="Calendar View"
                 className="w-full max-w-sm mx-auto"
               />
             </div>
             <div className="space-y-6 order-1 lg:order-2">
-              <div className="inline-block px-4 py-2 bg-teal-100 text-teal-600 rounded-full text-sm font-semibold">Detailed Tracking</div>
+              <div className="inline-block px-4 py-2 bg-teal-100 text-teal-600 rounded-full text-sm font-semibold text-center lg:text-left w-full lg:w-auto">Detailed Tracking</div>
               <h3 className="text-3xl sm:text-4xl font-bold text-gray-900">Every Day Tells a Story</h3>
               <p className="text-xl text-gray-600 leading-relaxed">
                 Dive deep into individual habits with detailed calendar views. See exactly when you completed each habit, track your streaks, and monitor your monthly completion rate.
@@ -336,7 +336,7 @@ const Home = () => {
           {/* Feature 7: Performance Analytics */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-32">
             <div className="space-y-6">
-              <div className="inline-block px-4 py-2 bg-orange-100 text-orange-600 rounded-full text-sm font-semibold">Performance Insights</div>
+              <div className="inline-block px-4 py-2 bg-orange-100 text-orange-600 rounded-full text-sm font-semibold text-center lg:text-left w-full lg:w-auto">Performance Insights</div>
               <h3 className="text-3xl sm:text-4xl font-bold text-gray-900">Understand What Works</h3>
               <p className="text-xl text-gray-600 leading-relaxed">
                 Detailed performance analytics show your day-of-week patterns, identify performance gaps, and let you add contextual notes to understand your successes and struggles.
@@ -373,7 +373,7 @@ const Home = () => {
             </div>
             <div className="relative">
               <img
-                src="/src/assets/images/screenshots/NotesandPerformance-portrait.png"
+                src="/images/screenshots/NotesandPerformance-portrait.png"
                 alt="Performance Analytics"
                 className="w-full max-w-sm mx-auto"
               />
@@ -384,13 +384,13 @@ const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-32">
             <div className="relative order-2 lg:order-1">
               <img
-                src="/src/assets/images/screenshots/Analytics-portrait.png"
+                src="/images/screenshots/Analytics-portrait.png"
                 alt="Overall Analytics"
                 className="w-full max-w-sm mx-auto"
               />
             </div>
             <div className="space-y-6 order-1 lg:order-2">
-              <div className="inline-block px-4 py-2 bg-cyan-100 text-cyan-600 rounded-full text-sm font-semibold">Big Picture View</div>
+              <div className="inline-block px-4 py-2 bg-cyan-100 text-cyan-600 rounded-full text-sm font-semibold text-center lg:text-left w-full lg:w-auto">Big Picture View</div>
               <h3 className="text-3xl sm:text-4xl font-bold text-gray-900">Celebrate Your Progress</h3>
               <p className="text-xl text-gray-600 leading-relaxed">
                 Get an overview of your entire habit ecosystem with completion rates, goal performance, and motivational insights that celebrate your wins and encourage continued growth.
@@ -430,8 +430,8 @@ const Home = () => {
           {/* Feature 9: AI Assistant */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <div className="inline-block px-4 py-2 bg-purple-100 text-purple-600 rounded-full text-sm font-semibold">Your AI Coach</div>
-              <h3 className="text-3xl sm:text-4xl font-bold text-gray-900">Meet Aya, Your Personal Growth Partner</h3>
+              <div className="inline-block px-4 py-2 bg-purple-100 text-purple-600 rounded-full text-sm font-semibold lg:inline-block text-center lg:text-left w-full lg:w-auto">Your AI Coach</div>
+              <h3 className="text-3xl sm:text-4xl font-bold text-gray-900 text-center lg:text-left">Meet Aya, Your Personal Growth Partner</h3>
               <p className="text-xl text-gray-600 leading-relaxed">
                 Chat with Aya anytime for personalized insights, motivation, and advice. She understands your habits, journal entries, and patterns to provide truly customized guidance.
               </p>
@@ -467,7 +467,7 @@ const Home = () => {
             </div>
             <div className="relative">
               <img
-                src="/src/assets/images/screenshots/Aya-portrait.png"
+                src="/images/screenshots/Aya-portrait.png"
                 alt="Aya AI Assistant"
                 className="w-full max-w-sm mx-auto"
               />
@@ -491,14 +491,19 @@ const Home = () => {
               transform: translateX(0);
             }
             100% {
-              transform: translateX(-50%);
+              transform: translateX(calc(-356px * 6));
             }
           }
           .animate-scroll {
-            animation: scroll 40s linear infinite;
+            animation: scroll 30s linear infinite;
           }
           .animate-scroll:hover {
             animation-play-state: paused;
+          }
+          @media (max-width: 768px) {
+            .animate-scroll {
+              animation: scroll 18s linear infinite;
+            }
           }
         `}</style>
 
@@ -677,7 +682,7 @@ const Home = () => {
             <p className="text-xl text-gray-300 mb-12">Join thousands of users who are already transforming their lives with MindMend.</p>
 
             <div className="mb-12">
-              <a href="https://apps.apple.com/app/mindmend" className="inline-block" target="_blank" rel="noopener noreferrer">
+              <a href="https://apps.apple.com/us/app/mindmend-habit-tracker/id6753316303" className="inline-block" target="_blank" rel="noopener noreferrer">
                 <div className="bg-white px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
                   <div className="flex items-center space-x-3">
                     <Smartphone className="w-8 h-8 text-gray-900" />
