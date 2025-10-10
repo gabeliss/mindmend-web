@@ -1,4 +1,4 @@
-import { Download, Smartphone, Brain, MessageCircle, BarChart3, Mic, Crown, Users, Target, Zap } from 'lucide-react'
+import { Download, Smartphone, Brain, MessageCircle, BarChart3, Mic, Target, Zap } from 'lucide-react'
 
 const Home = () => {
   return (
@@ -476,210 +476,12 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-50 to-purple-50 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
-          <div className="text-center">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Loved by Thousands</h2>
-            <p className="text-xl text-gray-600">See what our users are saying about their transformation</p>
-          </div>
-        </div>
-
-        <style>{`
-          @keyframes scroll {
-            0% {
-              transform: translateX(0);
-            }
-            100% {
-              transform: translateX(calc(-356px * 6));
-            }
-          }
-          .animate-scroll {
-            animation: scroll 30s linear infinite;
-          }
-          .animate-scroll:hover {
-            animation-play-state: paused;
-          }
-          @media (max-width: 768px) {
-            .animate-scroll {
-              animation: scroll 18s linear infinite;
-            }
-          }
-        `}</style>
-
-        <div className="relative">
-          <div className="flex animate-scroll">
-            {/* First set of testimonials */}
-            <div className="flex space-x-6 px-3">
-              <div className="bg-white p-6 rounded-xl shadow-lg min-w-[350px] max-w-[350px]">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold text-lg">
-                    S
-                  </div>
-                  <div className="ml-3">
-                    <p className="font-semibold text-gray-900">Sarah Chen</p>
-                    <div className="flex text-yellow-400">★★★★★</div>
-                  </div>
-                </div>
-                <p className="text-gray-600 italic">"MindMend completely changed how I approach my daily routines. The voice dictation feature is a game-changer!"</p>
-              </div>
-
-              <div className="bg-white p-6 rounded-xl shadow-lg min-w-[350px] max-w-[350px]">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 font-bold text-lg">
-                    M
-                  </div>
-                  <div className="ml-3">
-                    <p className="font-semibold text-gray-900">Marcus Johnson</p>
-                    <div className="flex text-yellow-400">★★★★★</div>
-                  </div>
-                </div>
-                <p className="text-gray-600 italic">"The AI insights are incredible. I discovered patterns in my habits I never would have noticed on my own."</p>
-              </div>
-
-              <div className="bg-white p-6 rounded-xl shadow-lg min-w-[350px] max-w-[350px]">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600 font-bold text-lg">
-                    E
-                  </div>
-                  <div className="ml-3">
-                    <p className="font-semibold text-gray-900">Emma Rodriguez</p>
-                    <div className="flex text-yellow-400">★★★★★</div>
-                  </div>
-                </div>
-                <p className="text-gray-600 italic">"Finally, a habit tracker that doesn't feel like a chore. The GitHub-style charts keep me motivated every day!"</p>
-              </div>
-
-              <div className="bg-white p-6 rounded-xl shadow-lg min-w-[350px] max-w-[350px]">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center text-orange-600 font-bold text-lg">
-                    D
-                  </div>
-                  <div className="ml-3">
-                    <p className="font-semibold text-gray-900">David Park</p>
-                    <div className="flex text-yellow-400">★★★★★</div>
-                  </div>
-                </div>
-                <p className="text-gray-600 italic">"Aya feels like having a personal coach in my pocket. Best investment I've made in my personal growth journey."</p>
-              </div>
-
-              <div className="bg-white p-6 rounded-xl shadow-lg min-w-[350px] max-w-[350px]">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center text-pink-600 font-bold text-lg">
-                    L
-                  </div>
-                  <div className="ml-3">
-                    <p className="font-semibold text-gray-900">Lisa Thompson</p>
-                    <div className="flex text-yellow-400">★★★★★</div>
-                  </div>
-                </div>
-                <p className="text-gray-600 italic">"I've tried every habit app out there. MindMend's analytics and journaling integration is unmatched."</p>
-              </div>
-
-              <div className="bg-white p-6 rounded-xl shadow-lg min-w-[350px] max-w-[350px]">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 font-bold text-lg">
-                    J
-                  </div>
-                  <div className="ml-3">
-                    <p className="font-semibold text-gray-900">James Wilson</p>
-                    <div className="flex text-yellow-400">★★★★★</div>
-                  </div>
-                </div>
-                <p className="text-gray-600 italic">"The cross-habit insights helped me understand why I struggle on certain days. This app is pure magic!"</p>
-              </div>
-            </div>
-
-            {/* Duplicate set for seamless loop */}
-            <div className="flex space-x-6 px-3">
-              <div className="bg-white p-6 rounded-xl shadow-lg min-w-[350px] max-w-[350px]">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold text-lg">
-                    S
-                  </div>
-                  <div className="ml-3">
-                    <p className="font-semibold text-gray-900">Sarah Chen</p>
-                    <div className="flex text-yellow-400">★★★★★</div>
-                  </div>
-                </div>
-                <p className="text-gray-600 italic">"MindMend completely changed how I approach my daily routines. The voice dictation feature is a game-changer!"</p>
-              </div>
-
-              <div className="bg-white p-6 rounded-xl shadow-lg min-w-[350px] max-w-[350px]">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 font-bold text-lg">
-                    M
-                  </div>
-                  <div className="ml-3">
-                    <p className="font-semibold text-gray-900">Marcus Johnson</p>
-                    <div className="flex text-yellow-400">★★★★★</div>
-                  </div>
-                </div>
-                <p className="text-gray-600 italic">"The AI insights are incredible. I discovered patterns in my habits I never would have noticed on my own."</p>
-              </div>
-
-              <div className="bg-white p-6 rounded-xl shadow-lg min-w-[350px] max-w-[350px]">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600 font-bold text-lg">
-                    E
-                  </div>
-                  <div className="ml-3">
-                    <p className="font-semibold text-gray-900">Emma Rodriguez</p>
-                    <div className="flex text-yellow-400">★★★★★</div>
-                  </div>
-                </div>
-                <p className="text-gray-600 italic">"Finally, a habit tracker that doesn't feel like a chore. The GitHub-style charts keep me motivated every day!"</p>
-              </div>
-
-              <div className="bg-white p-6 rounded-xl shadow-lg min-w-[350px] max-w-[350px]">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center text-orange-600 font-bold text-lg">
-                    D
-                  </div>
-                  <div className="ml-3">
-                    <p className="font-semibold text-gray-900">David Park</p>
-                    <div className="flex text-yellow-400">★★★★★</div>
-                  </div>
-                </div>
-                <p className="text-gray-600 italic">"Aya feels like having a personal coach in my pocket. Best investment I've made in my personal growth journey."</p>
-              </div>
-
-              <div className="bg-white p-6 rounded-xl shadow-lg min-w-[350px] max-w-[350px]">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center text-pink-600 font-bold text-lg">
-                    L
-                  </div>
-                  <div className="ml-3">
-                    <p className="font-semibold text-gray-900">Lisa Thompson</p>
-                    <div className="flex text-yellow-400">★★★★★</div>
-                  </div>
-                </div>
-                <p className="text-gray-600 italic">"I've tried every habit app out there. MindMend's analytics and journaling integration is unmatched."</p>
-              </div>
-
-              <div className="bg-white p-6 rounded-xl shadow-lg min-w-[350px] max-w-[350px]">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 font-bold text-lg">
-                    J
-                  </div>
-                  <div className="ml-3">
-                    <p className="font-semibold text-gray-900">James Wilson</p>
-                    <div className="flex text-yellow-400">★★★★★</div>
-                  </div>
-                </div>
-                <p className="text-gray-600 italic">"The cross-habit insights helped me understand why I struggle on certain days. This app is pure magic!"</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Download Section */}
       <section id="download" className="py-20 bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Start Your Journey Today</h2>
-            <p className="text-xl text-gray-300 mb-12">Join thousands of users who are already transforming their lives with MindMend.</p>
+            <p className="text-xl text-gray-300 mb-12">Experience the most advanced AI-powered habit tracker available on iOS.</p>
 
             <div className="mb-12">
               <a href="https://apps.apple.com/us/app/mindmend-habit-tracker/id6753316303" className="inline-block" target="_blank" rel="noopener noreferrer">
@@ -697,16 +499,16 @@ const Home = () => {
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-8">
               <div className="flex flex-col items-center space-y-2">
-                <Users className="w-8 h-8 text-blue-400" />
-                <span className="text-white font-semibold">10,000+ Downloads</span>
+                <Brain className="w-8 h-8 text-blue-400" />
+                <span className="text-white font-semibold">AI-Powered Insights</span>
               </div>
               <div className="flex flex-col items-center space-y-2">
-                <Target className="w-8 h-8 text-green-400" />
-                <span className="text-white font-semibold">95% User Satisfaction</span>
+                <Mic className="w-8 h-8 text-green-400" />
+                <span className="text-white font-semibold">Voice Dictation</span>
               </div>
               <div className="flex flex-col items-center space-y-2">
-                <Zap className="w-8 h-8 text-yellow-400" />
-                <span className="text-white font-semibold">Real-time Sync</span>
+                <BarChart3 className="w-8 h-8 text-yellow-400" />
+                <span className="text-white font-semibold">GitHub-Style Charts</span>
               </div>
             </div>
 
